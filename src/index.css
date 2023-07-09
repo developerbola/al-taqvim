@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar {
+  background: transparent;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffffff50;
+  border-radius: 7px;
+}

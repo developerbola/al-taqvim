@@ -1,0 +1,69 @@
+.Date {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 40px 0;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container > * {
+  margin: 0 15px;
+}
+
+img {
+  width: auto;
+  height: 50px;
+}
+
+.time {
+  color: #ffffffac;
+  font-size: 2.5em;
+  font-family: Microsoft Yahei UI;
+  width: 390px;
+  text-align: center;
+}
+
+.date {
+  color: #ffc700;
+}
+
+.date .hij{
+  color: #fff;
+  opacity: .7;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    box-sizing: border-box;
+    flex-direction: column;
+    background: #02392680;
+    backdrop-filter: blur(10px);
+    width: 90%;
+    color: #ffffffe3;
+    padding: 8px 15px;
+    border-radius: 10px;
+  }
+  .calendar {
+    display: none;
+  }
+  .time{
+    font-size: 2em;
+    width: 250px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .Data{
+    place-items: start;
+  }
+  .container{
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,26 @@
+html {
+  background: #000;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main{
+  min-height: 100vh;
+  background: url(./assets/bg/1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 2rem;
+}
+
+main.darkMain{
+  background: url(./assets/bg/2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+*::selection {
+  background: #ffffff10;
+}

@@ -1,0 +1,119 @@
+.Cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 30px 40px 30px;
+  flex-wrap: nowrap;
+}
+
+.Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+  height: 250px;
+  width: 210px;
+  background: #9c9c9c2d;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 0.5px 0 #fff;
+  margin: 15px 1vh;
+  border-radius: 25px;
+  color: #ffffff50;
+}
+
+.darkMain .Card{
+  background: #5858582d;
+}
+
+.Card .title,
+.prayTime {
+  font-size: 30px;
+}
+
+.Card img {
+  width: auto;
+  height: 130px;
+  padding: 20px;
+  margin-top: 0;
+  filter: grayscale(100%);
+}
+
+.Card.active {
+  color: #008653;
+  background: #ffffff65;
+  box-shadow: 0 0 15px 1px #ffffffa4;
+  backdrop-filter: blur(20px);
+}
+
+.Card.active p {
+  color: #008653;
+  text-shadow: 0 0 5px #00cf80;
+}
+
+.Card.active img {
+  filter: none;
+}
+
+.Card.active .pray-time {
+  color: #156e2f;
+  text-shadow: 0 0 5px #27a24c;
+}
+
+@media screen and (max-width: 1240px) {
+  .Cards {
+    /* padding: 0 0%; */
+    flex-wrap: wrap;
+  }
+  .Card {
+    width: 200px;
+    margin: 15px 5%;
+  }
+}
+
+@media screen and (max-width: 943px) {
+  .Card {
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Card {
+    height: 220px;
+    width: 170px;
+  }
+  .Card .title,
+  .prayTime {
+    font-size: 25px;
+  }
+  .Card img {
+    width: auto;
+    height: 115px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .Cards {
+    padding: 0 15px;
+  }
+  .Card {
+    height: 200px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .Card {
+    height: 180px;
+    width: 130px;
+  }
+  .Card .title{
+    font-size: 20px;
+  }
+  .Card img{
+    width: auto;
+    height: 100px;
+  }
+  .Card .prayTime{
+    font-size: 21px;
+  }
+}
